@@ -1,0 +1,491 @@
+
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+  }
+  .container-fluid{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+  }
+  /* ============= Фон с анимацией ============================================================================================================= */
+  .background {
+    background: linear-gradient(132deg, #000000, #7ea7a8, #2a2d47);
+    background-size: 400% 200%;
+    animation: Gradient 15s ease infinite;
+    position: fixed;
+    height: 400vh;
+    width: 100%;
+    padding:0;
+    margin:0px;
+    
+  }
+  .cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #D7D4E4;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+  }
+  .cube:nth-child(2n) {
+    border-color: #FFF ;
+  }
+  .cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+  .cube:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+  .cube:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+  .cube:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+  .cube:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+  /* ================= Заголовок ================================================================================================================ */
+  header{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+  /* navbar */
+  nav{
+    color: #FFF;
+    float: right;
+    margin:30px 90px;
+  }
+  nav ul{
+    list-style: none;
+  }
+  nav ul li {
+    float: left;
+    transition: .3s;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #EFEEF5;
+    transition: .5;
+    font-size: 15px;
+    margin-left:5px;
+    margin-right:5px;
+  }
+  nav ul li:hover a{
+    text-decoration: none;
+    color: #7ea7a8;
+  }
+  nav ul li:hover{
+    height: 20px;
+    padding-top: 5px;
+    margin-top: -5px;
+    background: #EFEEF5;
+    text-decoration: none;
+    transform: skew(-9deg);
+
+  }
+  /* ================= Логотип ================================================================================================================ */
+  .logo{
+    width: 219px;
+    height: 38px;
+    background: #EFEEF5;
+    margin: 40px 63px;
+    float: left;
+    transform: rotate(-5deg);
+  }
+  .img{
+    position: fixed
+  }
+  .logo span{
+    color: #7ea7a8;
+    font-size: 2em;
+    line-height: 1.4;
+    padding-left: 5px;
+    font-weight: bold;
+  }
+  /* ================= Заголовок =========================================================================================================== */
+  .header-content{
+    margin-top:11%;
+    text-align: center;
+    color:  white;
+    text-shadow: 3px 3px 2px black, 0 0 1em black;
+  }
+  .header-content h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    max-width: 70%;
+    margin: 20px auto;
+  }
+  .header-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20px auto;
+    max-width: 70%;
+  }
+  /* ================= Анимированный фон ================================================================================================== */
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+  /* ================= Медиа ============================================================================================================== */
+  .photo {
+    float: right;
+  }
+  .text_osnova{
+    color:  white;
+    text-align:left;
+    font-size: fixed 20px;
+    margin-left: 20px;
+    text-shadow: 1px 2px 2px black, 0 0 1em black;
+  }
+  .text_osnova1{
+    color:  white;
+    text-indent: 20px;
+    text-align: center;
+    font-size: fixed 20px;
+    margin-left: 40px;
+    text-shadow: 1px 2px 2px black, 0 0 1em black;
+  }
+  .text_label{
+    color:  white;
+    text-shadow: 1px 2px 2px black, 0 0 1em black;
+
+  }
+  .text_contacts{
+    color:  white;
+    margin: 30px auto;
+    text-indent: 20px;
+    text-align: center;
+    font-size: fixed 20px;
+    text-shadow: 1px 2px 2px black, 0 0 1em black;
+    border-radius: 6px 35px 6px 35px;
+    -moz-box-shadow: inset 5px 5px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #ffffff;
+    max-width: 50%;
+    padding: 15px;
+    line-height: 1.5;
+  }
+/* ================= Чекбоксы ============================================================================================================== */
+.hide,
+.hide + label ~ div {
+    display: none;
+}
+.hide + label {
+    margin: 0;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 20px;
+    text-shadow: 3px 3px 2px black, 0 0 1em black;
+}
+.hide:checked + label {
+    color: white;
+    font-style: italic;
+    border-bottom: 0;
+}
+.hide:checked + label + div {
+    
+    display: block;
+    border-radius: 6px 35px 6px 35px;
+    -moz-box-shadow: inset 5px 5px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #ffffff;
+    margin-left: 44px;
+    padding: 10px;
+    max-width: 55%;
+     -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+}
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+.hide + label:before {
+  
+    background-color: #1e90ff;
+    color: #fff;
+    content: "\002B";
+    display: block;
+    float: left;
+    font-size: 14px; 
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.hide:checked + label:before {
+    content: "\2212";
+}
+.zag{
+  max-width: 70%;
+}
+
+/*===========================Модальное окно=========================================================================================*/
+.modal-header h2 {
+  color: #555;  
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1;    
+  margin: 0;
+}
+.modal .btn-close {
+  color: #aaa;
+  cursor: pointer;
+  font-size: 30px;
+  text-decoration: none;
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+.modal .btn-close:hover {
+  color: red;
+}
+.modal-wrap:before {
+  content: "";
+  display: none;
+  background: rgba(0, 0, 0, .3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+}
+.modal-overlay {
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 102;
+}
+.modal-open:checked ~ .modal-wrap:before,
+.modal-open:checked ~ .modal-wrap .modal-overlay {
+  display: block;
+}
+.modal-open:checked ~ .modal-wrap .modal-dialog {
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  top: 20%;
+}
+.modal-dialog {
+  background: #fefefe;
+  border: none;
+  border-radius: 5px;
+  position: fixed;
+  width: 80%;
+  max-width: 500px;
+  left: 50%;
+  top: -100%;
+  -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+  box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+  -webkit-transform: translate(-50%, -500%);
+  -ms-transform: translate(-50%, -500%);
+  -o-transform: translate(-50%, -500%);
+  transform: translate(-50%, -500%);
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -moz-transition: -moz-transform 0.4s ease-out;
+  -o-transition: -o-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  z-index: 103;
+}
+.modal-body {
+padding: 20px;
+}
+.modal-body p {
+  margin: 0;
+}
+.modal-header,
+.modal-footer {
+  padding: 20px 20px;
+}
+.modal-header {
+  border-bottom: #eaeaea solid 1px;
+}
+.modal-header h2 {
+  font-size: 20px;
+  margin: 0;
+}
+.modal-footer {
+  border-top: #eaeaea solid 1px;
+  text-align: right;
+}
+.modal-body img { 
+  max-width: 100%;
+  height: auto;
+}
+.btn {
+  background: #fff;
+  border: #555 solid 1px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+}
+.btn:hover, .btn:focus {
+  background: #f2f2f2;
+}
+.btn-primary {
+  background: #428bca;
+  border-color: #357ebd;
+  color: #fff;
+}
+.btn-primary:hover{
+  background: #66A1D3;
+}
+.text_labelWthIndent{
+  text-indent: 20px;
+  color:  white;
+  text-shadow: 1px 2px 2px black, 0 0 1em black;
+}
+.map{
+  border-radius: 3px 50px 3px 50px;
+  box-shadow: 1px 1px 4px black, 0 0 2em black;
+}
+.link{
+  
+  color: white;
+}
+/* ================= Медиа-запросы =========================================================================================================== */
+@media screen and (max-width: 1450px){
+  .hide:checked + label + div {
+    max-width: 55%;
+}
+.hide:checked + label {
+  max-width: 55%;
+  margin: 7px 7px;
+  margin-left: 20px;
+}
+.hide + label {
+  max-width: 55%;
+  margin: 7px 7px;
+  margin-left: 20px;
+}
+.photo{
+  width: 40%;
+}
+.map{
+  max-width: 50%;
+}
+}
+@media screen and (max-width: 1220px){
+  .hide:checked + label + div {
+    max-width: 50%;
+}
+.hide:checked + label {
+  max-width: 50%;
+  margin: 7px 7px;
+  margin-left: 20px;
+}
+.hide + label {
+  max-width: 50%;
+  margin: 7px 7px;
+  margin-left: 20px;
+}
+.photo{
+  width: 35%;
+}
+}
+@media screen and (max-width: 1000px){
+  .hide:checked + label + div {
+    max-width: 40%;
+}
+.hide:checked + label {
+  max-width: 40%;
+  margin: 7px 7px;
+  margin-left: 20px;
+}
+.hide + label {
+  max-width: 40%;
+  margin: 7px 7px;
+  margin-left: 20px;
+}
+.photo{
+  width: 30%;
+}
+}
+@media screen and (max-width: 930px){
+  .photo {
+    width: 30%;
+  }
+  .hide:checked + label + div {
+    max-width: 40%;
+}
+.hide:checked + label {
+  max-width: 40%;
+  margin: 7px 7px;
+  margin-left: 20px;
+}
+.hide + label {
+  max-width: 40%;
+  margin: 7px 7px;
+  margin-left: 20px;
+}
+.logo{
+  display: none;
+}
+}
