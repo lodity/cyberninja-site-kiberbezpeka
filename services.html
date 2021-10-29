@@ -2,14 +2,13 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Сервіси</title>
+  <title>Тестування</title>
   <link rel="shortcut icon" href="logotype.png" type="image/x-icon">
  </head>
 </html>
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-<!-- Background & animion & navbar & title -->
 <div class="container-fluid">
-    <!-- Background animtion-->
+    <!-- Анімація фону -->
         <div class="background">
            <div class="cube"></div>
            <div class="cube"></div>
@@ -24,36 +23,169 @@
             <ul>
                 <li><a href="main.html">Головна</a></li>
                 <li><a href="info.html">Інформація</a></li>
-                <li><a href="services.html">Сервіси</a></li>
+                <li><a href="services.html">Тестування</a></li>
                 <li><a href="contacts.html">Контакти</a></li>
              </ul>
            </nav>
     <!-- logo -->
           <div class="logo"><span>Кібербезпека</span></div>
-    <!-- title & content -->
+    <!-- Заголовок та контент -->
           <section class="header-content">
-             <h1>Наші сервіси</h1>
+             <h1>Наше Тестування</h1>
           </section>
-          <p><img class="photo" src="osnova.png" alt="techno"></p>
-          <!-- Кнопка активации -->
-<label class="btn" for="modal-1">Открыть</label>
-<!-- Модальное окно -->
-<div class="modal">
-  <input class="modal-open" id="modal-1" type="checkbox" hidden>
-  <div class="modal-wrap" aria-hidden="true" role="dialog">
-    <label class="modal-overlay" for="modal-1"></label>
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <h2>¯\_( ͡° ͜ʖ ͡°)_/¯</h2>
-        <label class="btn-close" for="modal-1" aria-hidden="true">×</label>
-      </div>
-      <div class="modal-body">
-        <p>Ви кібернебезпечні! Ніколи не вводьте свої паролі на незнайомих сайтах!</p>
-      </div>
-      <div class="modal-footer">
-        <label class="btn btn-primary" for="modal-1">Визнаю)</label>
-      </div>
-    </div>
-  </div>
-</div>
-</header>
+          <p><img class="photo" src="osnova1.png" alt="techno"></p>
+
+          <!-- Запитання тесту -->
+
+          <label class="test_label">
+          <div class="text_test">
+            <form charset="windows-1251" name="Q" action="" method="post">
+         <p>1. Який з цих паролів надійніше?</p>
+
+          <input id="r1" type="radio" name="rb1" value="0" >
+          <label for="r1">13022002</label>
+         </br>
+          <input id="r2" type="radio" name="rb1" value="0">
+          <label for="r2">ivanov2002</label>
+         </br>
+          <input id="r3" type="radio" name="rb1" value="1">
+          <label for="r3">@2002@ivanov.best </label>
+         </br>
+
+          <p>2. Скільки у Вас повинно бути паролів?</p>
+
+          <input id="r4" type="radio" name="rb2" value="0">
+          <label for="r4">Два: один простий, інший — для сайтів, які говорять, що він ненадійний</label>
+         </br>
+          <input id="r5" type="radio" name="rb2" value="0">
+          <label for="r5">Один на всі випадки</label>
+         </br>
+          <input id="r6" type="radio" name="rb2" value="1">
+          <label for="r6">Для кожного сайту свій пароль</label>
+         </br>
+
+          <p>3. Вам прийшов лист, у якому сказано, що ви виграли IPhone 13 Pro Max і для цього потрібно перейти за посиланням. Що будете робити?</p>
+ 
+          <input id="r7" type="radio" name="rb3" value="0">
+          <label for="r7">Згадаю, чи траплялося зі мною щось хороше останнім часом. Якщо ні, то, може, мені справді пощастило?</label>
+         </br>
+          <input id="r8" type="radio" name="rb3" value="1">
+          <label for="r8">Не буду переходити, виглядає як шахрайство</label>
+         </br>
+          <input id="r9" type="radio" name="rb3" value="0">
+          <label for="r9">Звичайно, перейду за посиланням, новий IPhone не завадить</label> 
+         </br>
+          <p>4. Чи потрібно застосовувати двофакторну аутинтефікацію?</p>
+ 
+          <input id="r10" type="radio" name="rb4" value="0">
+          <label for="r10">Ні, а що це?</label>
+         </br>
+          <input id="r11" type="radio" name="rb4" value="0">
+          <label for="r11">Ні, навіщо вона мені потрібна?</label>
+         </br>
+          <input id="r12" type="radio" name="rb4" value="1">
+          <label for="r12">Звичайно, так зловмисники не зможуть отримати мої дані</label> 
+         </br>
+         <p>5. Припустімо, ви застосовуєте двофакторну аутентифікацію. Як краще отримувати для неї код?</p>
+  
+          <input id="r13" type="radio" name="rb5" value="1">
+          <label for="r13">Налаштувати додаток так, щоб він надсилав код</label>
+         </br>
+          <input id="r14" type="radio" name="rb5" value="0">
+          <label for="r14">Через смс</label>
+         </br>
+          <input id="r15" type="radio" name="rb5" value="0">
+          <label for="r15">Записати на папірці і заховати в надійному місці</label>
+         </br>   
+          <p>6. Ви намагаєтеся підключитися до Wi-Fi, який працює без пароля. Браузер каже, що підключення не захищене. Що робити?</p>
+
+          <input id="r16" type="radio" name="rb6" value="0">
+          <label for="r16">Знайти кнопку "Продовжити", вона захована, але десь є, я вже так робив</label>
+         </br>
+          <input id="r17" type="radio" name="rb6" value="1">
+          <label for="r17">Знайти іншу точку доступу</label>
+         </br>
+          <input id="r18" type="radio" name="rb6" value="0">
+          <label for="r18">Вимкнути ноутбук</label>
+         </br>
+         </form>
+
+        </label>
+
+        <!-- Заготовлені відповіді -->
+
+        <form charset="windows-1251" name="L">
+   
+          <input type="hidden" name="l1" value="0">
+          <input type="hidden" name="l2" value="1">
+          <input type="hidden" name="l3" value="2">
+          <input type="hidden" name="l4" value="3">
+          <input type="hidden" name="l5" value="4">
+          <input type="hidden" name="l6" value="5">
+         
+         </form>
+         
+         
+         <form charset="windows-1251" name="H" action="" method="post">  
+
+         <input type="hidden" name="h1" value="1">
+         <input type="hidden" name="h2" value="2">
+         <input type="hidden" name="h3" value="3">
+         <input type="hidden" name="h4" value="4">
+         <input type="hidden" name="h5" value="5">
+         <input type="hidden" name="h6" value="6">
+         
+         </form>
+         
+         
+         <form charset="windows-1251" name="D" action="" method="post">   
+
+         <input type="hidden" name="tDtxt1" value="Ваша оцінка 2">   
+         <input type="hidden" name="tDtxt2" value="Ваша оцінка 4">   
+         <input type="hidden" name="tDtxt3" value="Ваша оцінка 6">     
+         <input type="hidden" name="tDtxt4" value="Ваша оцінка 8">
+         <input type="hidden" name="tDtxt5" value="Ваша оцінка 10">
+         <input type="hidden" name="tDtxt6" value="Ваша оцінка 12">
+           
+         </form>
+
+         <!-- Отримання результату -->
+
+        <script>
+          function makeDiagnosis() {
+          
+            tQcnt = 2;
+            tDcnt = 6;
+          
+           
+           summa = 0;
+             
+           for( j=0; j<document.Q.rb1.length; j++ ) { if( document.Q.rb1[j].checked ) { summa += eval(document.Q.rb1[j].value); } }
+           for( j=0; j<document.Q.rb2.length; j++ ) { if( document.Q.rb2[j].checked ) { summa += eval(document.Q.rb2[j].value); } }
+           for( j=0; j<document.Q.rb3.length; j++ ) { if( document.Q.rb3[j].checked ) { summa += eval(document.Q.rb3[j].value); } }
+           for( j=0; j<document.Q.rb4.length; j++ ) { if( document.Q.rb4[j].checked ) { summa += eval(document.Q.rb4[j].value); } }
+           for( j=0; j<document.Q.rb5.length; j++ ) { if( document.Q.rb5[j].checked ) { summa += eval(document.Q.rb5[j].value); } }
+           for( j=0; j<document.Q.rb6.length; j++ ) { if( document.Q.rb6[j].checked ) { summa += eval(document.Q.rb6[j].value); } }
+          
+           dx = 0;
+            for( i=0; i<tDcnt; i++ ) {
+              if( summa >= eval(document.L.elements[i].value) && summa <= eval(document.H.elements[i].value) ) { dx = i; break; }
+            }
+          
+            
+          document.C.tDiagnosis.value = "Ви отримали  "+summa+"  балів. "+document.D.elements[dx].value;
+          }
+          </script>
+
+          <!-- Відображення результату -->
+
+          <form charset="windows-1251" name="C">
+          <center>
+          <input class="btn_result" type="button" name="pbSubmit" value="Результати" onclick="makeDiagnosis()">
+          <input class="btn_result" type="reset" value="Спочатку" name="res">
+           <br><br>
+            <input class="result" type="text" name="tDiagnosis" readonly>
+          </center>
+          </form>
+          </div>
+          </header> 
