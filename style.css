@@ -74,7 +74,7 @@
   nav{
     color: #FFF;
     float: right;
-    margin:30px 90px;
+    margin: 30px 90px;
   }
   nav ul{
     list-style: none;
@@ -96,7 +96,7 @@
     color: #7ea7a8;
   }
   nav ul li:hover{
-    height: 20px;
+    height: 24px;
     padding-top: 5px;
     margin-top: -5px;
     background: #EFEEF5;
@@ -296,7 +296,7 @@ max-width: 55%;
 }
 
 .result{
-  width: 270px;
+  width: 310px;
   text-align: center;
   border-radius: 6px 10px 6px 10px;
 }
